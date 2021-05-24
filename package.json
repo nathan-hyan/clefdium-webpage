@@ -41,7 +41,8 @@
     "lint-diff": "git diff --name-only --cached --relative --diff-filter=ACM | grep -e \\.js$ -e \\.tsx$ -e \\.ts$ | xargs eslint",
     "coverage": "npm run test -- --coverage --watchAll=false",
     "coverage-diff": "echo 'Testing'",
-    "generate": "plop"
+    "generate": "plop",
+    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install && npm run build"
   },
   "browserslist": {
     "production": [
