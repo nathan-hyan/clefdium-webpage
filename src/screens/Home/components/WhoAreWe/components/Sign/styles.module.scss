@@ -1,0 +1,25 @@
+@import "scss/variables/_colors";
+* {
+  font-family: "Roboto";
+}
+
+.container {
+  // TODO: Replace with mixin when ready
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.icon {
+  color: $primary;
+  font-size: 40px;
+  margin-bottom: 20px;
+  width: 100% !important;
+}
+
+.text {
+  color: $black;
+  font-size: 12px;
+  line-height: 18px;
+  white-space: pre;
+}
