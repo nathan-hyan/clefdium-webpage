@@ -1,0 +1,21 @@
+@import "scss/variables/_colors";
+
+.primaryButton {
+    border-radius: 10px;
+    text-align: center;
+    display:inline-flex;
+  padding: 14px 60px;
+  background-color: $primary;
+  &:hover {
+    cursor: pointer;
+  }
+  &:active {
+    background-color: darken($primary, 10);
+  }
+}
+.label {
+    font-weight: bold;
+    font-size: 18px;
+   
+  color: $white;
+}
