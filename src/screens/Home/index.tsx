@@ -1,11 +1,16 @@
 import React from 'react';
-import { useTranslation } from 'react-i18next';
 
-import styles from './styles.module.scss';
+import NavigationBar from './components/NavigationBar';
+import WhatDoWeDo from './components/WhatDoWeDo';
+import WhoAreWe from './components/WhoAreWe';
 
 function Home() {
-  const { t } = useTranslation('Home');
-
-  return <h1 className={styles.foo}>{t('foo')}</h1>;
+  return (
+    <>
+      <NavigationBar />
+      <WhoAreWe />
+      <WhatDoWeDo />
+    </>
+  );
 }
 export default Home;

@@ -1,9 +1,7 @@
+@import 'scss/variables/_mixins';
+
 .container {
-  // TODO: Replace with mixin when ready
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-self: center;
+  @include flex();
   padding: 50px 0;
 
   .title {
@@ -13,8 +11,6 @@
 }
 
 .sign-container {
-  display: flex;
-  gap: 40px;
-  justify-content: center;
-  align-self: center;
+  @include flex(center, center, row);
+  gap: 80px;
 }
