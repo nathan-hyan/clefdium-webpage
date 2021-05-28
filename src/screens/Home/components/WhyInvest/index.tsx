@@ -13,7 +13,8 @@ function WhyInvest() {
       <h1 className={styles.title}>{t('title')}</h1>
       <p className={styles.text}>{t('text')}</p>
       <p className={styles.text}>{t('textSecondPart')}</p>
-      <Button className={styles.button} label={t('buttonText')} onClick={() => console.log('sadwda')} />
+      {/* TODO: Replace function when "Proximamente" modal is ready */}
+      <Button className={styles.button} label={t('buttonText')} onClick={() => console.log('Proximamente')} />
     </div>
   );
 }
