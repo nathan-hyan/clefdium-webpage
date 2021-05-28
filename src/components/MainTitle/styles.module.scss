@@ -1,0 +1,18 @@
+@import "scss/variables/_colors";
+@import "scss/variables/_mixins";
+
+.container {
+  @include flex();
+}
+.title {
+  color: darken($gray, 25);
+  font-family: Roboto;
+  font-size: 60px;
+  font-weight: bold;
+  padding-top: 15px;
+}
+.underline {
+  margin-top: 50px;
+  border-bottom: 2px solid $primary;
+  width: 200px;
+}
