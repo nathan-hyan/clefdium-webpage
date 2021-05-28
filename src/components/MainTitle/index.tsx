@@ -1,6 +1,5 @@
 import React from 'react';
 
-/* import { useTranslation } from 'react-i18next'; */
 import style from './styles.module.scss';
 
 interface Props {
@@ -9,7 +8,6 @@ interface Props {
 }
 
 function MainTitle({ text, className }: Props) {
-  /* const { t } = useTranslation('Whoweare'); */
   return (
     <div className={`${className} ${style.container}`}>
       <h1 className={style.title}>{text}</h1>
