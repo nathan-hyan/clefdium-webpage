@@ -6,7 +6,7 @@ function requireAll(requireContext) {
 }
 
 i18next.use(initReactI18next).init({
-  lng: 'es',
+  lng: 'en',
   // uncomment next line if you have multilang in your application and you have a fallback language
   // fallbackLng: 'en',
   initImmediate: false
