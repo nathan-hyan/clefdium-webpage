@@ -12,5 +12,6 @@
 
 .sign-container {
   @include flex(center, center, row);
+  margin-top: 30px;
   gap: 80px;
 }

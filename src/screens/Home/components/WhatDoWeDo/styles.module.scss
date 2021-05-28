@@ -13,7 +13,7 @@
 }
 
 .items {
-  @include flex(center, center);
+  @include flex(center, start);
   gap: 50px;
   width: 100%;
 }
