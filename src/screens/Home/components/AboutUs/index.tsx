@@ -15,7 +15,7 @@ function AboutUs() {
 
       <div className={styles.boxContainer}>
         {COMMENTS.map((comment) => (
-          <CommentBox key={comment.id} text={t(comment.text)} personName={comment.name} />
+          <CommentBox key={comment.id} text={t(comment.text)} personName={t(comment.name)} />
         ))}
       </div>
     </div>
