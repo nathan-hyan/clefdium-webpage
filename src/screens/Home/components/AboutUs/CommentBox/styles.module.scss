@@ -1,0 +1,29 @@
+@import "scss/variables/_colors";
+@import "scss/variables/_mixins";
+* {
+  font-family: "Roboto";
+}
+
+.container {
+    @include flex(space-around,center,column);
+    border-radius: 10px;
+    text-align: center;
+    display:inline-flex;
+  margin: 30px;
+  padding: 10px;
+  background-color: $primary;
+}
+
+
+.text {
+  color: $white;
+  font-size: 15px;
+  line-height: 18px;
+  white-space: pre;
+}
+.personName{
+    color: $white;
+    font-size: 18px;
+    font-weight: bold;
+    text-align:right;
+}
