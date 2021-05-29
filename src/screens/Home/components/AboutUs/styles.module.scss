@@ -1,14 +1,12 @@
-@import 'scss/variables/_mixins';
+@import "scss/variables/_mixins";
 
 .container {
-    @include flex();
-    padding: 120px 0;
-  
-    
-  }
+  @include flex();
+  padding: 120px 0;
+}
 
-  .box-container {
-    @include flex(center, start, row);
-    margin-top: 50px;
-    gap: 30px;
-  }
+.box-container {
+  @include flex(center, start, row);
+  margin-top: 50px;
+  gap: 30px;
+}
