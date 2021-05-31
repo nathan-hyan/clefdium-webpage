@@ -12,7 +12,7 @@ function CommentBox({ text, personName }: Props) {
     <div className={styles.container}>
       <p className={styles.text}>{text}</p>
       <div className={styles.alingRight}>
-        <p className={styles.personName}>{personName}</p>
+        <p className={styles.personName}>- {personName}</p>
       </div>
     </div>
   );

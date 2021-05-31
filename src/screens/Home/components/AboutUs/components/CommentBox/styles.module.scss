@@ -8,7 +8,6 @@
   @include flex(space-around, center, column);
   border-radius: 10px;
   text-align: center;
-  display: inline-flex;
   margin: 20px;
   padding: 25px;
   background-color: $primary;
@@ -18,7 +17,7 @@
   color: $white;
   font-size: 15px;
   line-height: 18px;
-  white-space: pre;
+  white-space:pre;
 }
 .personName {
   margin-top: 20px;
