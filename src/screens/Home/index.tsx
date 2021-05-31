@@ -1,5 +1,6 @@
 import React from 'react';
 
+import AboutUs from './components/AboutUs';
 import NavigationBar from './components/NavigationBar';
 import WhatDoWeDo from './components/WhatDoWeDo';
 import WhoAreWe from './components/WhoAreWe';
@@ -12,6 +13,7 @@ function Home() {
       <WhoAreWe />
       <WhatDoWeDo />
       <WhyInvest />
+      <AboutUs />
     </>
   );
 }
