@@ -5,7 +5,7 @@ import MainTitle from 'components/MainTitle';
 
 import { COMMENTS } from './constants';
 import styles from './styles.module.scss';
-import CommentBox from './CommentBox';
+import CommentBox from './components/CommentBox';
 
 function AboutUs() {
   const { t } = useTranslation('Comments');
