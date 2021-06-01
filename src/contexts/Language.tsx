@@ -1,3 +1,4 @@
+/* eslint-disable no-console */
 import i18next from 'i18next';
 import React, { createContext, useState } from 'react';
 

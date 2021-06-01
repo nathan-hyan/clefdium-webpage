@@ -4,6 +4,7 @@ import { BrowserRouter as Router, Switch } from 'react-router-dom';
 import { LangContext } from 'contexts/Language';
 import NavigationBar from 'components/NavigationBar';
 import LoadingScreen from 'components/LoadingScreen';
+import GlobalModal from 'contexts/Modal';
 
 import Suspense from '../Suspense';
 
@@ -18,18 +19,20 @@ function Routes() {
   };
 
   return (
-    <Router>
-      <div className={styles.container}>
-        <Suspense fallback={LoadingScreen}>
-          <NavigationBar changeLanguage={changeLang} />
-          <Switch>
-            {ROUTES.map(({ path, ...config }) => (
-              <RouteItem key={path} path={path} {...config} />
-            ))}
-          </Switch>
-        </Suspense>
-      </div>
-    </Router>
+    <Suspense fallback={<LoadingScreen />}>
+      <Router>
+        <div className={styles.container}>
+          <GlobalModal>
+            <NavigationBar changeLanguage={changeLang} />
+            <Switch>
+              {ROUTES.map(({ path, ...config }) => (
+                <RouteItem key={path} path={path} {...config} />
+              ))}
+            </Switch>
+          </GlobalModal>
+        </div>
+      </Router>
+    </Suspense>
   );
 }
 

@@ -9,8 +9,8 @@ interface Props {
 }
 function Button({ onClick, label, className }: Props) {
   return (
-    <div className={`${className} ${styles.primaryButton}`}>
-      <button type="button" onClick={onClick}>
+    <div className={className}>
+      <button className={styles.primaryButton} type="button" onClick={onClick}>
         <p className={styles.label}>{label}</p>
       </button>
     </div>
