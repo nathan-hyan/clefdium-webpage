@@ -1,0 +1,14 @@
+@import "scss/variables/_colors";
+@import "scss/variables/_mixins";
+
+.container {
+  @include flex(center, center, row);
+  margin: 70px 0;
+  gap: 100px;
+}
+.title {
+  text-align: center;
+  font-size: 35px;
+  font-weight: bold;
+  color: darken($gray, 25);
+}
