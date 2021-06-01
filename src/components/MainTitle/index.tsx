@@ -1,6 +1,6 @@
 import React from 'react';
 
-import style from './styles.module.scss';
+import styles from './styles.module.scss';
 
 interface Props {
   text: string;
@@ -9,9 +9,9 @@ interface Props {
 
 function MainTitle({ text, className }: Props) {
   return (
-    <div className={`${className} ${style.container}`}>
-      <h1 className={style.title}>{text}</h1>
-      <div className={style.underline} />
+    <div className={`${className} ${styles.container}`}>
+      <h1 className={styles.title}>{text}</h1>
+      <div className={styles.underline} />
     </div>
   );
 }
