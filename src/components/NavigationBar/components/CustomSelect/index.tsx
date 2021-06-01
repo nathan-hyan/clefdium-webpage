@@ -6,6 +6,7 @@ import styles from './styles.module.scss';
 interface Props {
   options: Item[];
   translationKey: string;
+  selected: string | number;
   onChange: ChangeEventHandler<HTMLSelectElement>;
 }
 
@@ -15,14 +16,14 @@ interface Item {
   translate: string;
 }
 
-function CustomSelect({ options, translationKey, onChange }: Props) {
+function CustomSelect({ options, translationKey, onChange, selected }: Props) {
   const { t } = useTranslation(translationKey);
 
   return (
     <div>
       <select className={styles.select} onChange={onChange}>
         {options.map((item) => (
-          <option key={item.id} value={item.value}>
+          <option selected={item.value === selected} key={item.id} value={item.value}>
             {t(item.translate)}
           </option>
         ))}

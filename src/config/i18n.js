@@ -1,19 +1,28 @@
 import i18next from 'i18next';
 import { initReactI18next } from 'react-i18next';
+import LanguageDetector from 'i18next-browser-languagedetector';
 
 function requireAll(requireContext) {
   return requireContext.keys().map(requireContext);
 }
 
-i18next.use(initReactI18next).init({
-  lng: 'es',
-  // uncomment next line if you have multilang in your application and you have a fallback language
-  // fallbackLng: 'en',
-  initImmediate: false
-});
+const storedLanguage =
+  localStorage.getItem('i18nextLng') === 'es' && localStorage.getItem('i18nextLng') === 'en'
+    ? localStorage.getItem('i18nextLng')
+    : 'en';
 
-if (process.env.NODE_ENV !== 'test') {
-  requireAll(require.context('..', true, /i18n\.(js|ts)$/));
-}
+i18next
+  .use(initReactI18next)
+  .use(LanguageDetector)
+  .init({
+    fallbackLng: storedLanguage,
+    detection: {
+      order: ['localStorage'],
+      cache: ['localStorage']
+    },
+    interpolation: { escapeValue: false }
+  });
+
+requireAll(require.context('..', true, /i18n\.(js|ts)$/));
 
 export default i18next;
