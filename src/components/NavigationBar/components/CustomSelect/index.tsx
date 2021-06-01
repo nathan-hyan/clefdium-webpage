@@ -21,9 +21,9 @@ function CustomSelect({ options, translationKey, onChange, selected }: Props) {
 
   return (
     <div>
-      <select className={styles.select} onChange={onChange}>
+      <select defaultValue={selected} className={styles.select} onChange={onChange}>
         {options.map((item) => (
-          <option selected={item.value === selected} key={item.id} value={item.value}>
+          <option key={item.id} value={item.value}>
             {t(item.translate)}
           </option>
         ))}

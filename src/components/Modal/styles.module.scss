@@ -1,0 +1,42 @@
+@import 'scss/variables/_mixins';
+@import 'scss/variables/_colors';
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    @include flex();
+    position: fixed;
+    overflow-y: hidden;
+}
+
+.modal-container {
+    background: $dirty-white;
+    z-index: 9;
+    padding: 50px;
+    border-radius: 15px;
+}
+
+.title {
+    display: block;
+    color: $black;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.text {
+    padding: 30px 0;
+    margin: 30px 0;
+    display: block;
+    text-align: center;
+    width: 100%;
+    border-bottom: 1px solid $border-lighter;
+    border-top: 1px solid $border-lighter;
+}
+
+.back-drop{
+    background-color: rgba($black, 0.8);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 8;
+}

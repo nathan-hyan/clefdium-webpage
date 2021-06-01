@@ -6,7 +6,7 @@
 }
 
 .box-container {
-  @include flex(center, start, row);
+  @include flex(center, flex-start, row);
   margin-top: 50px;
   gap: 30px;
 }
