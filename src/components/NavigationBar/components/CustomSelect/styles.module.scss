@@ -1,0 +1,12 @@
+@import 'scss/variables/_colors';
+@import 'scss/variables/_fonts';
+
+.select {
+    border: 1px solid $primary;
+    border-radius: 15px;
+    padding: 5px 15px;
+    background: url($down-arrow) no-repeat 40px #ddd;
+    background-color: $white;
+    -webkit-appearance: none;
+    background-size: 10px;
+}
