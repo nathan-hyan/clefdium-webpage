@@ -8,11 +8,15 @@ import styles from './styles.module.scss';
 import CustomSelect from './components/CustomSelect';
 import { LANGUAGES } from './constants';
 
-function NavigationBar() {
+interface Props {
+  changeLanguage: (value: string) => void;
+}
+
+function NavigationBar({ changeLanguage }: Props) {
   const { t } = useTranslation('NavigationBar');
 
   const handleLanguageChange = ({ target: { value } }: ChangeEvent<HTMLSelectElement>) => {
-    console.log('This is going to change eventually', value);
+    changeLanguage(value);
   };
 
   return (

@@ -1,10 +1,10 @@
 import React from 'react';
 import { render } from 'react-dom';
 
-import App from 'components/App';
-
 import 'config/i18n';
 import 'scss/application.scss';
+
+import App from 'components/App';
 
 import reportWebVitals from './reportWebVitals';
 
