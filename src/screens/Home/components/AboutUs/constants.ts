@@ -2,16 +2,16 @@ export const COMMENTS = [
   {
     id: 0,
     text: 'one',
-    name: 'nameOne'
+    name: 'John Doe'
   },
   {
     id: 1,
     text: 'two',
-    name: 'nameTwo'
+    name: 'John Doe'
   },
   {
     id: 2,
     text: 'three',
-    name: 'nameThree'
+    name: 'John Doe'
   }
 ];
