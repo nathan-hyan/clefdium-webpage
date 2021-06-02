@@ -1,0 +1,16 @@
+@import "scss/variables/_colors";
+@import "scss/variables/_mixins";
+
+.link {
+  @include flex(center, center, row);
+  
+  padding: 10px;
+  &:hover {
+    cursor: pointer;
+  }
+  p {
+    color: $white;
+    padding: 25px 20px 0 20px;
+    font-size: 17px;
+  }
+}
