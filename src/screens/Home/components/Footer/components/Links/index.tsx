@@ -9,13 +9,17 @@ import styles from './styles.module.scss';
 function Links() {
   const { toggleOpen } = useContext(GlobalModalContext);
   const { t } = useTranslation('Footer');
+  const toggle = () => {
+    toggleOpen(MODAL_TYPE.comingSoon);
+  };
+
   return (
     <div className={styles.link}>
-      <p onClick={() => toggleOpen(MODAL_TYPE.comingSoon)}>{t('textOne')}</p>
-      <p onClick={() => toggleOpen(MODAL_TYPE.comingSoon)}>{t('textTwo')}</p>
-      <p onClick={() => toggleOpen(MODAL_TYPE.comingSoon)}>{t('textThree')}</p>
-      <p onClick={() => toggleOpen(MODAL_TYPE.comingSoon)}>{t('textFour')}</p>
-      <p onClick={() => toggleOpen(MODAL_TYPE.comingSoon)}>{t('textFive')}</p>
+      <p onClick={toggle}>{t('privacyPolicies')}</p>
+      <p onClick={toggle}>{t('termsOfUse')}</p>
+      <p onClick={toggle}>{t('coockiesPolicies')}</p>
+      <p onClick={toggle}>{t('clientDefense')}</p>
+      <p onClick={toggle}>{t('investorInformation')}</p>
     </div>
   );
 }
