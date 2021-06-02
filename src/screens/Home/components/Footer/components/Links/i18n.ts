@@ -4,7 +4,7 @@ i18next.addResources('es', 'Footer', {
   privacyPolicies: 'Politicas de privacidad',
   termsOfUse: 'Términos de uso',
   coockiesPolicies: 'Política de coockies',
-  lientDefense: 'Reglamento de defensa de cliente',
+  clientDefense: 'Reglamento de defensa de cliente',
   investorInformation: 'Información para inversores'
 });
 
