@@ -6,11 +6,12 @@ interface Props {
   label: string;
   name: string;
   type?: 'text';
+  className?: string;
 }
 
-function CustomInput({ label, name, type = 'text' }: Props) {
+function CustomInput({ label, name, type = 'text', className }: Props) {
   return (
-    <div className={styles.container}>
+    <div className={`${styles.container} ${className}`}>
       <label htmlFor={name} className={styles.label}>
         {label}
       </label>

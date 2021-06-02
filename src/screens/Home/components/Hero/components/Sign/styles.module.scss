@@ -1,0 +1,16 @@
+@import 'scss/variables/_colors';
+@import 'scss/variables/_mixins';
+
+.text {
+    color: $black;
+    font-size: 18px;
+    font-weight: lighter;
+}
+
+.container {
+    @include flex(center, flex-start, column);
+    background-color: $dirty-white;
+    gap: 20px;
+    padding: 40px 60px 40px 40px;
+    border-radius: 15px 0 0 15px;
+}
