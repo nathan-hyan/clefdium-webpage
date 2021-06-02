@@ -1,0 +1,22 @@
+@import 'scss/variables/_colors';
+@import 'scss/variables/_mixins';
+
+.container {
+    background-image: url('./assets/background.jpg');
+    background-size: cover;
+    background-position: center;
+    width: 100vw;
+    @include flex();
+}
+
+.upper-section {
+    width: 100%;
+    @include flex(space-between, center, row);
+    margin: 80px 0;
+}
+
+.lower-section {
+    width: 100%;
+    @include flex(space-around, center, row);
+    background-color: rgba($black, 0.8);
+}

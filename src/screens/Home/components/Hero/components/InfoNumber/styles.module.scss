@@ -1,0 +1,20 @@
+@import 'scss/variables/_colors';
+@import 'scss/variables/_mixins';
+
+.container {
+    @include flex();
+    padding: 40px 0;
+}
+
+.title {
+color: $white;
+font-weight: lighter;
+font-size: 20px;
+margin-bottom: 30px;
+}
+
+.number {
+color: $white;
+font-weight: lighter;
+font-size: 50px;
+}
