@@ -2,15 +2,29 @@
 @import 'scss/variables/_mixins';
 
 .container {
-    width: 350px;
+    width: 400px;
     background: $dirty-white;
     margin-left: 60px;
     padding: 30px;
     border-radius: 15px;
-    @include flex(center, flex-start, column);
-    gap: 25px;
 }
 
 .input {
     width: 100%;
+}
+
+.inputs {
+    @include flex(center, flex-start, column);
+    gap: 25px;
+}
+
+.amount {
+    margin: 25px 0;
+    @include flex(center, flex-start, row);
+    gap: 25px;
+}
+
+.lower-buttons{
+@include flex(flex-start, center, row);
+gap: 25px;
 }

@@ -7,15 +7,17 @@ interface Props {
   name: string;
   type?: 'text';
   className?: string;
+  defaultValue?: number;
+  disabled?: boolean;
 }
 
-function CustomInput({ label, name, type = 'text', className }: Props) {
+function CustomInput({ label, name, type = 'text', className, defaultValue, disabled }: Props) {
   return (
     <div className={`${styles.container} ${className}`}>
       <label htmlFor={name} className={styles.label}>
         {label}
       </label>
-      <input className={styles.input} id={name} type={type} />
+      <input disabled={disabled} defaultValue={defaultValue} className={styles.input} id={name} type={type} />
     </div>
   );
 }
