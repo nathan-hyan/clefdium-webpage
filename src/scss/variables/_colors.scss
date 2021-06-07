@@ -5,6 +5,8 @@ $red: #F00;
 $blue: #00F;
 $gray: #A2A2A2;
 $primary: #36ba6e;
+$lighten-black:lighten($black, 20);
+$darken-primary:darken($primary, 10);
 
 /* Border colors */
 

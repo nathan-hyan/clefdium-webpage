@@ -6,7 +6,7 @@
     font-size: 15px;
     font-weight: bold;
     padding: 0 25px;
-    color: lighten($black, 20);
+    color: $lighten-black;
   }
 }
 
@@ -14,17 +14,17 @@
   font-size: 15px;
   font-weight: bold;
   padding: 0 25px;
-  color: lighten($black, 20);
+  color: $lighten-black;
 
   &:hover {
     color: $primary;
     cursor: pointer;
   }
   &:active{
-    color: darken($primary, 10);
+    color: $darken-primary;
   }
 }
 
 .active {
-  color: darken($primary, 10);
+  color: $darken-primary;
 }

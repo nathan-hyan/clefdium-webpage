@@ -19,7 +19,7 @@ margin-left: 15px;
   height: 70px;
 }
 .data{
-  @include flex(center, center, column);
+  @include flex(center,flex-end, column);
 
   
  h2{
