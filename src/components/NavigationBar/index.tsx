@@ -10,6 +10,7 @@ import { GlobalModalContext } from 'contexts/Modal';
 import styles from './styles.module.scss';
 import CustomSelect from './components/CustomSelect';
 import { LANGUAGES } from './constants';
+import NavBarItems from './components/NavbarLink';
 
 interface Props {
   changeLanguage: (value: string) => void;
@@ -26,20 +27,23 @@ function NavigationBar({ changeLanguage }: Props) {
   };
 
   return (
-    <div className={styles.container}>
-      <div className={styles.leftSide}>
-        <img src={logo} alt="Clefdium" className={styles.logo} />
+    <div>
+      <div className={styles.container}>
+        <div className={styles.leftSide}>
+          <img src={logo} alt="Clefdium" className={styles.logo} />
+        </div>
+        <div className={styles.rightSide}>
+          <CustomSelect
+            options={LANGUAGES}
+            selected={language}
+            translationKey="none"
+            onChange={handleLanguageChange}
+          />
+          <Button label={t('register')} onClick={() => toggleOpen(MODAL_TYPE.comingSoon)} />
+          <Button label={t('login')} onClick={() => toggleOpen(MODAL_TYPE.comingSoon)} />
+        </div>
       </div>
-      <div className={styles.rightSide}>
-        <CustomSelect
-          options={LANGUAGES}
-          selected={language}
-          translationKey="none"
-          onChange={handleLanguageChange}
-        />
-        <Button label={t('register')} onClick={() => toggleOpen(MODAL_TYPE.comingSoon)} />
-        <Button label={t('login')} onClick={() => toggleOpen(MODAL_TYPE.comingSoon)} />
-      </div>
+      <NavBarItems />
     </div>
   );
 }

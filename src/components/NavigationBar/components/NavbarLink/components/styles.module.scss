@@ -1,0 +1,30 @@
+@import "scss/variables/_colors";
+@import "scss/variables/_mixins";
+
+.text {
+  p {
+    font-size: 15px;
+    font-weight: bold;
+    padding: 0 25px;
+    color: $lighten-black;
+  }
+}
+
+.label {
+  font-size: 15px;
+  font-weight: bold;
+  padding: 0 25px;
+  color: $lighten-black;
+
+  &:hover {
+    color: $primary;
+    cursor: pointer;
+  }
+  &:active{
+    color: $darken-primary;
+  }
+}
+
+.active {
+  color: $darken-primary;
+}

@@ -1,0 +1,8 @@
+@import "scss/variables/_colors";
+@import "scss/variables/_mixins";
+
+.downside {
+  @include flex(center, center, row);
+  padding: 15px;
+  border-bottom: 1px solid $black;
+}
