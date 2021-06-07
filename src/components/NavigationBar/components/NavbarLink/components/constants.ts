@@ -6,7 +6,7 @@ export const LINKS = [
   },
   {
     id: 1,
-    text: 'whereToinvest'
+    text: 'whereToInvest'
   },
   {
     id: 2,
