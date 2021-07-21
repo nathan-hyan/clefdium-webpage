@@ -2,16 +2,14 @@ import i18next from 'i18next';
 
 i18next.addResources('es', 'Comments', {
   title: 'QUÉ DICEN NUESTROS SOCIOS',
-  one: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, \nsed do eiusmod tempor incididunt ut labore et dolore magna aliqua.\n Ut enim ad minim veniam, quis nostrud exercitation',
-  two: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, \nsed do eiusmod tempor incididunt ut labore et dolore magna aliqua.\n Ut enim ad minim veniam, quis nostrud exercitation \nullamco laboris nisi ut aliquip ex ea commodo consequat. ',
-  three:
-    'Lorem ipsum dolor sit amet, consectetur adipiscing elit, \nsed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
+  one: 'Clefdium es una excelente manera de diversificar mi portfolio de manera de ser dueña de propiedades por el mundo en lugar de limitarme a un solo lugar.',
+  two: 'Excelente plataforma para inversiones inmobiliarias 100% recomendados dan seguimiento puntual y muy buena atención a clientes.\n\nMuy buenos rendimientos y todos los proyectos están validados previo al Fondeo.',
+  three: 'Clefdium nace como plataforma para canalizar las demandas de promotores e inversores'
 });
 
 i18next.addResources('en', 'Comments', {
   title: 'What Our Partners Say',
-  one: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, \nsed do eiusmod tempor incididunt ut labore et dolore magna aliqua.\n Ut enim ad minim veniam, quis nostrud exercitation',
-  two: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, \nsed do eiusmod tempor incididunt ut labore et dolore magna aliqua.\n Ut enim ad minim veniam, quis nostrud exercitation \nullamco laboris nisi ut aliquip ex ea commodo consequat.  ',
-  three:
-    'Lorem ipsum dolor sit amet, consectetur adipiscing elit, \nsed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
+  one: 'Clefdium is a great way to diversify my portfolio so that I can own properties around the world instead of limiting myself to one place.',
+  two: 'Excellent platform for 100% recommended real estate investments, punctual follow-up and very good customer service.\n\nVery good returns and all projects are validated prior to Funding. ',
+  three: 'Clefdium was born as a platform to channel the demands of promoters and investors '
 });
