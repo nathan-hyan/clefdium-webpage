@@ -1,11 +1,11 @@
 import React, { useContext, useState } from 'react';
 import { useTranslation } from 'react-i18next';
 
-import CustomInput from 'components/CustomInput';
-import Button from 'components/Button';
-import { GlobalModalContext } from 'contexts/Modal';
-import { MODAL_TYPE } from 'contexts/constants';
-import CustomCheckbox from 'components/CustomCheckbox';
+import Button from '~components/Button';
+import CustomCheckbox from '~components/CustomCheckbox';
+import CustomInput from '~components/CustomInput';
+import { MODAL_TYPE } from '~contexts/constants';
+import { GlobalModalContext } from '~contexts/Modal';
 
 import styles from './styles.module.scss';
 
@@ -26,17 +26,40 @@ function Calculator() {
   return (
     <div className={styles.container}>
       <div className={styles.inputs}>
-        <CustomInput className={styles.input} label={t('city')} name="xd" />
-        <CustomInput className={styles.input} label={t('propertyType')} name="xd" />
-        <CustomInput disabled={!sell} className={styles.input} label={t('roomQuantity')} name="xd" />
+        <CustomInput className={styles.input} label={t('city')} name='xd' />
+        <CustomInput
+          className={styles.input}
+          label={t('propertyType')}
+          name='xd'
+        />
+        <CustomInput
+          disabled={!sell}
+          className={styles.input}
+          label={t('roomQuantity')}
+          name='xd'
+        />
       </div>
       <div className={styles.amount}>
-        <CustomInput className={styles.input} label={t('minAmount')} name="xd" defaultValue={DEFAULT_VALUE} />
-        <CustomInput className={styles.input} label={t('maxAmount')} name="xd" />
+        <CustomInput
+          className={styles.input}
+          label={t('minAmount')}
+          name='xd'
+          defaultValue={DEFAULT_VALUE}
+        />
+        <CustomInput
+          className={styles.input}
+          label={t('maxAmount')}
+          name='xd'
+        />
       </div>
       <div className={styles.lowerButtons}>
         <Button label={t('send')} onClick={toggle} />
-        <CustomCheckbox label={t('sell')} checked={sell} name="xd" onChange={toggleSell} />
+        <CustomCheckbox
+          label={t('sell')}
+          checked={sell}
+          name='xd'
+          onChange={toggleSell}
+        />
       </div>
     </div>
   );

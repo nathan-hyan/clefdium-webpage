@@ -1,7 +1,7 @@
 /* eslint-disable no-console */
 import React, { createContext, useCallback, useEffect, useState } from 'react';
 
-import Modal from 'components/Modal';
+import Modal from '~components/Modal';
 
 import { MODAL_TYPE } from './constants';
 
@@ -14,10 +14,14 @@ const ESCAPE_KEY = 27;
 
 export const GlobalModalContext = createContext<Props>({
   isOpen: false,
-  toggleOpen: () => console.log('')
+  toggleOpen: () => console.log(''),
 });
 
-export default function GlobalModal({ children }: { children: React.ReactNode }) {
+export default function GlobalModal({
+  children,
+}: {
+  children: React.ReactNode;
+}) {
   const [isOpen, setIsOpen] = useState(false);
   const [modalType, setModalType] = useState('');
 
@@ -53,7 +57,9 @@ export default function GlobalModal({ children }: { children: React.ReactNode })
 
   return (
     <GlobalModalContext.Provider value={{ isOpen, toggleOpen }}>
-      {isOpen && <Modal toggle={toggleOpen} type={modalType || MODAL_TYPE.comingSoon} />}
+      {isOpen && (
+        <Modal toggle={toggleOpen} type={modalType || MODAL_TYPE.comingSoon} />
+      )}
       {children}
     </GlobalModalContext.Provider>
   );

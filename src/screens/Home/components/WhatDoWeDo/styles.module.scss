@@ -1,27 +1,30 @@
-@import "scss/variables/_colors";
-@import "scss/variables/_mixins";
+@import '~scss/variables/colors';
+@import '~scss/variables/_mixins';
 
 * {
-  font-family: "Roboto";
+  font-family: Roboto;
 }
 
 .container {
-  background-color: $primary;
   @include flex(center, center, row);
+
   gap: 50px;
   padding: 12.5vh 12vw;
+  background-color: $primary;
 }
 
 .items {
   @include flex(center, flex-start);
+
   gap: 50px;
   width: 100%;
 }
 
 .title {
-  text-align: center;
   width: 100%;
-  color: $white;
+
   font-size: 36px;
   font-weight: bold;
+  color: $white;
+  text-align: center;
 }

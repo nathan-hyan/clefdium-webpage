@@ -1,4 +1,4 @@
-import i18next from 'i18next';
+import i18next from '~config/i18n';
 
 i18next.addResources('es', 'Calculator', {
   city: 'Ciudad',
@@ -7,7 +7,7 @@ i18next.addResources('es', 'Calculator', {
   send: 'Enviar',
   minAmount: 'Monto mínimo',
   maxAmount: 'Monto máximo',
-  sell: 'Venta'
+  sell: 'Venta',
 });
 
 i18next.addResources('en', 'Calculator', {
@@ -17,5 +17,5 @@ i18next.addResources('en', 'Calculator', {
   send: 'Send',
   minAmount: 'Min. Amount',
   maxAmount: 'Max. Amount',
-  sell: 'Selling'
+  sell: 'Selling',
 });

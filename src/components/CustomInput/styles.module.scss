@@ -1,23 +1,25 @@
-@import "scss/variables/_colors";
-@import "scss/variables/_mixins";
+@import '~scss/variables/colors';
+@import '~scss/variables/mixins';
 
 .container {
   @include flex(center, start);
 }
 
 .label {
+  margin-bottom: 0.7rem;
   color: $black;
-  margin-bottom: 7px;
 }
 
 .input {
-  border: 1px solid $border-light;
-  border-radius: 5px;
-  color: $black;
-  padding: 8px 13px;
   width: 100%;
-  
+  padding: 0.8rem 1.3rem;
+
+  color: $black;
+
+  border: 0.1rem solid $border-light;
+  border-radius: 0.5rem;
+
   &:focus {
-      border-color: $primary;
+    border-color: $primary;
   }
 }

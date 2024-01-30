@@ -1,4 +1,4 @@
-@import "scss/variables/_mixins";
+@import '~scss/variables/_mixins';
 
 .container {
   @include flex();

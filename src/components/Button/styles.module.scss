@@ -1,21 +1,28 @@
-@import "scss/variables/_colors";
+@use 'sass:color';
 
-.primaryButton {
-    border-radius: 10px;
-    text-align: center;
-    display:inline-flex;
-  padding: 14px 60px;
+@import '~scss/variables/colors';
+
+.primary-button {
+  display: inline-flex;
+
+  padding: 1.4rem 6rem;
+
+  text-align: center;
+
   background-color: $primary;
+  border-radius: 1rem;
+
   &:hover {
     cursor: pointer;
   }
+
   &:active {
-    background-color: darken($primary, 10);
+    background-color: color.adjust($primary, $lightness: 10%);
   }
 }
+
 .label {
-    font-weight: bold;
-    font-size: 18px;
-   
+  font-size: 1.8rem;
+  font-weight: bold;
   color: $white;
 }

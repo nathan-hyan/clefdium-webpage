@@ -1,22 +1,25 @@
-@import 'scss/variables/_colors';
-@import 'scss/variables/_mixins';
+@import '~scss/variables/colors';
+@import '~scss/variables/_mixins';
 
 .container {
-    background-image: url('./assets/background.jpg');
-    background-size: cover;
-    background-position: center;
-    width: 100vw;
-    @include flex();
+  @include flex;
+
+  width: 100vw;
+  background-image: url('./assets/background.jpg');
+  background-position: center;
+  background-size: cover;
 }
 
 .upper-section {
-    width: 100%;
-    @include flex(space-between, center, row);
-    margin: 80px 0;
+  @include flex(space-between, center, row);
+
+  width: 100%;
+  margin: 80px 0;
 }
 
 .lower-section {
-    width: 100%;
-    @include flex(space-around, center, row);
-    background-color: rgba($black, 0.8);
+  @include flex(space-around, center, row);
+
+  width: 100%;
+  background-color: rgba($black, 0.8);
 }

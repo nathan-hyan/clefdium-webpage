@@ -1,22 +1,128 @@
-@import '~wolox-equalizer/equalizer';
-
+/* stylelint-disable no-descending-specificity */
 @import 'layout';
 
 @import 'margins';
 
 @import 'components';
 
-@import 'scss/variables/_fonts';
+@import '~scss/variables/fonts';
 
 * {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+
   font-family: Roboto, Oxygen, Ubuntu, 'Droid Sans', sans-serif;
+
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+span,
+label,
+input,
+a,
+button,
+select,
+textarea {
+  margin: 0;
+
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 1.4rem;
+  color: #333;
+}
+
+h1:focus,
+h2:focus,
+h3:focus,
+h4:focus,
+h5:focus,
+h6:focus,
+p:focus,
+span:focus,
+label:focus,
+input:focus,
+a:focus,
+button:focus,
+select:focus,
+textarea:focus {
+  outline: none;
+}
+
+select {
+  appearance: none;
+}
+
+table {
+  table-layout: fixed;
+  border-collapse: collapse;
+}
+
+input,
+select,
+textarea,
+button {
+  border: 0;
+  border-radius: 0;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  margin: 0;
+  appearance: none;
+}
+
+button {
+  cursor: pointer;
+  background: transparent;
+}
+
+button::-moz-focus-inner {
+  border: 0;
+}
+
+a {
+  cursor: pointer;
+  text-decoration: none;
+}
+
+a:focus,
+a:active {
+  color: #333;
+  text-decoration: none;
+}
+
+ul,
+li {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+::placeholder {
+  color: #999;
+  opacity: 1;
+}
+
+b,
+strong {
+  font-weight: normal;
+}
+
+html {
+  /* stylelint-disable-next-line unit-disallowed-list */
+  font-size: 10px;
+}
+
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
 }

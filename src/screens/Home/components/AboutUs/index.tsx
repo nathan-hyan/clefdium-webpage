@@ -1,11 +1,12 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
 
-import MainTitle from 'components/MainTitle';
+import MainTitle from '~components/MainTitle';
 
-import { COMMENTS } from './constants';
-import styles from './styles.module.scss';
 import CommentBox from './components/CommentBox';
+import { COMMENTS } from './constants';
+
+import styles from './styles.module.scss';
 
 function AboutUs() {
   const { t } = useTranslation('Comments');

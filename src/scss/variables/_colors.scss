@@ -1,14 +1,16 @@
-$white: #FFF;
-$dirty-white: #F7F7F7;
+@use 'sass:color';
+
+$white: #fff;
+$dirty-white: #f7f7f7;
 $black: #000;
-$red: #F00;
-$blue: #00F;
-$gray: #A2A2A2;
+$red: #f00;
+$blue: #00f;
+$gray: #a2a2a2;
 $primary: #36ba6e;
-$lighten-black:lighten($black, 20);
-$darken-primary:darken($primary, 10);
+$lighten-black: color.adjust($black, $lightness: 20%);
+$darken-primary: color.adjust($primary, $lightness: -10%);
 
 /* Border colors */
 
-$border-light: lighten($gray, 5);
-$border-lighter: lighten($gray, 25);
+$border-light: color.adjust($gray, $lightness: 5%);
+$border-lighter: color.adjust($gray, $lightness: 25%);

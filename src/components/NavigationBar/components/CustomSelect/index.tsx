@@ -1,4 +1,4 @@
-import React, { ChangeEventHandler } from 'react';
+import { ChangeEventHandler } from 'react';
 import { useTranslation } from 'react-i18next';
 
 import styles from './styles.module.scss';

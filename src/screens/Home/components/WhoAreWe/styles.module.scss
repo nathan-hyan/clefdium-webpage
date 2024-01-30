@@ -1,17 +1,19 @@
-@import 'scss/variables/_mixins';
+@import '~scss/variables/_mixins';
 
 .container {
-  @include flex();
+  @include flex;
+
   padding: 50px 0;
 
   .title {
-    text-align: center;
     margin-bottom: 50px;
+    text-align: center;
   }
 }
 
 .sign-container {
   @include flex(center, center, row);
-  margin-top: 30px;
+
   gap: 80px;
+  margin-top: 30px;
 }

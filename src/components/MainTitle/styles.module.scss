@@ -1,17 +1,21 @@
-@import "scss/variables/_colors";
-@import "scss/variables/_mixins";
+@use 'sass:color';
+
+@import '~scss/variables/colors';
+@import '~scss/variables/mixins';
 
 .container {
-  @include flex();
+  @include flex;
 }
+
 .title {
-  color: darken($gray, 25);
-  font-family: "Roboto";
-  font-size: 35px;
+  font-family: Roboto, sans-serif;
+  font-size: 3.5rem;
   font-weight: bold;
+  color: color.adjust($gray, $lightness: -25%);
 }
+
 .underline {
-  margin-top: 25px;
-  border-bottom: 2px solid $primary;
-  width: 130px;
+  width: 13rem;
+  margin-top: 2.5rem;
+  border-bottom: 0.2rem solid $primary;
 }

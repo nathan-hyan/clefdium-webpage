@@ -1,37 +1,38 @@
-@import "scss/variables/_colors";
-@import "scss/variables/_mixins";
+@import '~scss/variables/colors';
+@import '~scss/variables/_mixins';
+
 * {
-  font-family: "Roboto";
+  font-family: Roboto;
 }
 
 .container {
-  background-color: $primary;
   gap: 30px;
   padding: 7vh 12vw;
-
+  background-color: $primary;
 }
-.upSide{
+
+.upSide {
   @include flex(space-between, center, row);
 }
 
 .logo {
-margin-left: 15px;
   height: 70px;
+  margin-left: 15px;
 }
-.data{
-  @include flex(center,flex-end, column);
 
-  
- h2{
-  padding-bottom: 40px;
-   color: $dirty-white;
-   font-size: 26px;
-   font-weight: bold;
- }
- p{
-  padding: 5px;
-   color: $white;
-   font-size: 17px;
- }
+.data {
+  @include flex(center, flex-end, column);
 
+  h2 {
+    padding-bottom: 40px;
+    font-size: 26px;
+    font-weight: bold;
+    color: $dirty-white;
+  }
+
+  p {
+    padding: 5px;
+    font-size: 17px;
+    color: $white;
+  }
 }

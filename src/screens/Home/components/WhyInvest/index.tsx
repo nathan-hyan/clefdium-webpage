@@ -1,9 +1,9 @@
 import React, { useContext } from 'react';
 import { useTranslation } from 'react-i18next';
 
-import Button from 'components/Button';
-import { MODAL_TYPE } from 'contexts/constants';
-import { GlobalModalContext } from 'contexts/Modal';
+import Button from '~components/Button';
+import { MODAL_TYPE } from '~contexts/constants';
+import { GlobalModalContext } from '~contexts/Modal';
 
 import styles from './styles.module.scss';
 

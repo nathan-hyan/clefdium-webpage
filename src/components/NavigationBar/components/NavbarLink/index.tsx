@@ -1,11 +1,12 @@
-import React, { useContext } from 'react';
+import { useContext } from 'react';
 import { useTranslation } from 'react-i18next';
 
-import { MODAL_TYPE } from 'contexts/constants';
-import { GlobalModalContext } from 'contexts/Modal';
+import { MODAL_TYPE } from '~contexts/constants';
+import { GlobalModalContext } from '~contexts/Modal';
 
-import NavItem from './components';
 import { LINKS } from './components/constants';
+import NavItem from './components';
+
 import styles from './styles.module.scss';
 
 function NavBarItems() {
@@ -17,7 +18,12 @@ function NavBarItems() {
   return (
     <div className={styles.downside}>
       {LINKS.map((list) => (
-        <NavItem key={list.id} onClick={toggle} label={t(list.text)} isActive={list.active} />
+        <NavItem
+          key={list.id}
+          onClick={toggle}
+          label={t(list.text)}
+          isActive={list.active}
+        />
       ))}
     </div>
   );

@@ -1,4 +1,4 @@
-import i18next from 'i18next';
+import i18next from '~config/i18n';
 
 i18next.addResources('es', 'Sign', {
   lowInvestmentsAmounts: 'Montos de inversión bajos',
@@ -6,7 +6,7 @@ i18next.addResources('es', 'Sign', {
   goodProfitability: 'Buena rentabilidad mensual',
   outsideProperties: 'Propiedades fuera del país cotizadas en dólares',
   dollarIncome: 'Ganancias en dólares',
-  wideVariety: 'Amplia variedad de activos en bienes raíces'
+  wideVariety: 'Amplia variedad de activos en bienes raíces',
 });
 
 i18next.addResources('en', 'Sign', {
@@ -15,5 +15,5 @@ i18next.addResources('en', 'Sign', {
   goodProfitability: 'Good monthly profitability',
   outsideProperties: 'Properties outside the country priced in dollars',
   dollarIncome: 'Earnings in dollars',
-  wideVariety: 'Wide variety of real estate assets'
+  wideVariety: 'Wide variety of real estate assets',
 });

@@ -1,11 +1,6 @@
-import React from 'react';
-// import { useTranslation } from 'react-i18next';
-
 import styles from './styles.module.scss';
 
 function LoadingScreen() {
-  // const { t } = useTranslation('LoadingScreen');
-
   return (
     <div className={styles.container}>
       <div className={styles.skFadingCircle}>

@@ -1,18 +1,20 @@
-@import "scss/variables/_colors";
-@import "scss/variables/_mixins";
+@import '~scss/variables/colors';
+@import '~scss/variables/mixins';
 
 .container {
-    @include flex(space-between, center, row);
-    background: $dirty-white;
-    padding: 0 50px 0 80px;
-    height: 100px;
+  @include flex(space-between, center, row);
+
+  height: 10rem;
+  padding: 0 5rem 0 8rem;
+  background: $dirty-white;
 }
 
 .logo {
-    height: 55px;
+  height: 5.5rem;
 }
 
-.rightSide {
-    @include flex(flex-end, center, row);
-    gap: 30px
+.right-side {
+  @include flex(flex-end, center, row);
+
+  gap: 3rem;
 }
